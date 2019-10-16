@@ -1,35 +1,45 @@
-<h1>Show Product</h1>
+<div class="row">
+    <div class="col-sm-4">
+        <img src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
+    </div>
+    <div class="col-sm-8">
+        <div class="row">
+        <div class="col-sm-10">
+            <h1><%= @product.title %> <span class="badge badge-secondary">New</span></h1>
+            <%= @product.description %>
+            <ul>
+            <%= for point <- @product.productpoints do %>
+                <li><%= point.txt %></li>
+            <% end %>
+            </ul>
+            <form action="/products/addtobasket/<%= @product.id %>" method="post">
+                <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
+                 <%= submit "Buy Now" %>
+              </form>
+        </div>
+        <div class="col-sm-2 price">
+            <del>£<%= @product.price %></del> £<%= @product.price * @product.discount %>
+      </div>
+      </div>
+    </div>
+</div>
 
-<ul>
 
-  <li>
-    <strong>Title:</strong>
-    <%= @product.title %>
-  </li>
+<div class="row justify-content-end">
+    <div class="col-sm-8">
+        <h1><%= length(@product.reviews) %> Reviews</h1>
+        <div class="row">
+           <%= for review <- @product.reviews do %>
+              <div class="col"><div class="card">
+                                 <div class="card-body">
+                                   <%= review.score %> / 10 <br> <%= review.description %>
+                                 </div>
+                               </div></div>
+          <% end %>
+         </div>
+        <h1>Leave a review</h1>
+        <%= render "review.html", Map.put(assigns, :action, Routes.review_path(@conn, :create)) %>
+    </div>
+</div>
 
-  <li>
-    <strong>Img:</strong>
-    <%= @product.img %>
-  </li>
-
-  <li>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </li>
-
-  <li>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </li>
-
-  <li>
-    <strong>Discount:</strong>
-    <%= @product.discount %>
-  </li>
-
-</ul>
-
-<%= render "review.html", Map.put(assigns, :action, Routes.review_path(@conn, :create)) %>
-
-<span><%= link "Edit", to: Routes.product_path(@conn, :edit, @product) %></span>
-<span><%= link "Back", to: Routes.product_path(@conn, :index) %></span>
+</div>

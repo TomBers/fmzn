@@ -6,7 +6,7 @@
   <% end %>
 
   <%= label f, :score %>
-  <%= number_input f, :score %>
+  <%= select f, :score, 10..1 %>
   <%= error_tag f, :score %>
 
   <%= label f, :description %>

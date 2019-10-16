@@ -1,3 +1,11 @@
 /* This file is for your main application css. */
 
 @import "./phoenix.css";
+
+.price {
+    font-size: 16px;
+}
+
+del {
+    color: red;
+}

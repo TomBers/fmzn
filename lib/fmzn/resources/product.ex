@@ -25,7 +25,7 @@ defmodule Fmzn.Resources.Product do
     product
     |> cast(attrs, [:title, :img, :description, :price, :discount])
     |> cast_assoc(:productpoints, required: true)
-    |> cast_assoc(:reviews, required: true)
+    |> cast_assoc(:reviews, required: false)
     |> validate_required([:title, :img, :description, :price, :discount])
   end
 end

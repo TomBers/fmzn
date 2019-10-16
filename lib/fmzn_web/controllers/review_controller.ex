@@ -15,12 +15,12 @@ defmodule FmznWeb.ReviewController do
   end
 
   def create(conn, %{"review" => review_params}) do
-    IO.inspect(review_params)
+
     case Resources.create_review(review_params) do
       {:ok, review} ->
         conn
         |> put_flash(:info, "Review created successfully.")
-        |> redirect(to: Routes.review_path(conn, :show, review))
+        |> redirect(to: Routes.product_path(conn, :show, Map.get(review_params, "product_id")))
 
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)
