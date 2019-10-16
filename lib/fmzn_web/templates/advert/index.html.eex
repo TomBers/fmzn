@@ -1,0 +1,28 @@
+<h1>Listing Adverts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Img</th>
+      <th>Txt</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for advert <- @adverts do %>
+    <tr>
+      <td><%= advert.img %></td>
+      <td><%= advert.txt %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.advert_path(@conn, :show, advert) %></span>
+        <span><%= link "Edit", to: Routes.advert_path(@conn, :edit, advert) %></span>
+        <span><%= link "Delete", to: Routes.advert_path(@conn, :delete, advert), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Advert", to: Routes.advert_path(@conn, :new) %></span>

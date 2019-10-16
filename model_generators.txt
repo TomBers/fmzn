@@ -1,0 +1,7 @@
+mix phx.gen.html Resources Product products title:string img:string description:string price:float discount:float
+
+mix phx.gen.html Resources ProductPoints productpoints txt:string product_id:references:products
+
+mix phx.gen.html Resources Review reviews score:integer description:string product_id:references:products
+
+mix phx.gen.html Resources Advert adverts img:string txt:string
