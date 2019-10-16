@@ -5,9 +5,14 @@ defmodule FmznWeb.ShoppingCart do
 
 
   def call(conn, _) do
-    case get_session(conn, :shoping_basket) do
-      nil -> put_session(conn, :shoping_basket, [])
-      _ -> conn
+    conn |> assign(:basket, get_basket(conn))
+  end
+
+  def get_basket(conn) do
+    b = get_session(conn, :basket)
+    case b do
+      nil -> []
+      _ -> b
     end
   end
 

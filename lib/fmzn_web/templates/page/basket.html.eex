@@ -1,0 +1,17 @@
+<h1>My Basket</h1>
+<%= for product <- @products do %>
+    <div class="card basket-list">
+        <div class="card-body">
+            <div class="row">
+            <div class="col-sm-4">
+                <img class="thumbnail" src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
+            </div>
+            <div class="col-sm-8">
+                <%= product.title %>
+                <%= product.description %>
+                <%= product.price * product.discount %>
+            </div>
+            </div>
+        </div>
+    </div>
+<% end %>

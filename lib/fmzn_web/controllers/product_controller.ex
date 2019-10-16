@@ -29,18 +29,23 @@ defmodule FmznWeb.ProductController do
   end
 
   def show(conn, %{"id" => id}) do
-    shopping_basket = get_session(conn, :shoping_basket)
     product = Resources.get_product!(id)
     review = %Review{product_id: id}
     changeset = Resources.change_review(review)
 
-    render(conn, "show.html", product: product, changeset: changeset, shopping_basket: shopping_basket, token: get_csrf_token())
+    advert = Resources.get_advert!(1)
+
+    render(conn, "show.html", product: product, changeset: changeset, token: get_csrf_token(), advert: advert)
   end
 
   def add_to_basket(conn, %{"product_id" => pid}) do
     product = Resources.get_product!(pid)
-    shopping_basket = get_session(conn, :shoping_basket)
-    put_session(conn, :shoping_basket, shopping_basket ++ [pid])
+    b = get_session(conn, :basket)
+    shopping_basket = case b do
+      nil -> [pid]
+      _ -> b ++ [pid]
+    end
+    put_session(conn, :basket, shopping_basket)
     |> put_flash(:info, "Added to shopping cart successfully.")
     |> redirect(to: Routes.product_path(conn, :show, product))
 

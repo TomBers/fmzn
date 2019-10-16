@@ -22,6 +22,11 @@ defmodule Fmzn.Resources do
     Repo.all(Product)
   end
 
+  def find_products(product_list) do
+    from(p in Product, where: p.id in ^product_list)
+    |> Repo.all()
+  end
+
   @doc """
   Gets a single product.
 

@@ -15,11 +15,13 @@
       <section class="container">
         <nav role="navigation">
           <ul>
-            <i class="fa fa-shopping-basket"></i> <%= length(@conn.assigns.shopping_basket) %> items
+            <a href="/basket">
+            <i class="fa fa-shopping-basket"></i> <%= length(Map.get(@conn.assigns, :basket, [])) %> items
             <li><input type="text" name="search" placeholder="search"></li>
+            </a>
           </ul>
         </nav>
-        <a href="/" class="phx-logo">
+        <a href="/products" class="phx-logo">
           Fmzn
         </a>
       </section>

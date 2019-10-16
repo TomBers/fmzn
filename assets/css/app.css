@@ -9,3 +9,17 @@
 del {
     color: red;
 }
+.basket-list {
+   margin-bottom: 20px;
+}
+.thumbnail {
+    max-height: 75px;
+}
+
+.advert {
+    border: 1px solid red;
+    min-height: 200px;
+    color: red;
+    font-size: 28px;
+
+}
