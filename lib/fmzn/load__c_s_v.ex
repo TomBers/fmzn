@@ -12,7 +12,7 @@ defmodule Load_CSV do
   end
 
   def add_new_product(title, description, category, price, secondary_category, bp1, bp2, bp3) do
-    Resources.create_product(%{title: title, description: description, discount: 0.2, primary_category: category, secondary_category: secondary_category, price: price, productpoints: [%{txt: bp1}, %{txt: bp2}, %{txt: bp3} ]})
+    Resources.create_product(%{title: title, description: description, discount: 0.8, primary_category: category, secondary_category: secondary_category, price: price, productpoints: [%{txt: bp1}, %{txt: bp2}, %{txt: bp3} ]})
   end
 
 end

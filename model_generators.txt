@@ -5,3 +5,10 @@ mix phx.gen.html Resources ProductPoints productpoints txt:string product_id:ref
 mix phx.gen.html Resources Review reviews score:integer description:string product_id:references:products
 
 mix phx.gen.html Resources Advert adverts img:string txt:string
+
+
+Note:
+
+CSV load product
+
+mix run c_s_v.exs
