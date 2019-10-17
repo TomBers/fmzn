@@ -19,7 +19,7 @@
 
      <!-- Links -->
      <ul class="navbar-nav">
-        <%= for category <- ["Books", "For Men", "For Women", "For X", "NSFW", "CD-Roms", "Pets", "Art", "Glamour"] do %>
+        <%= for category <- Fmzn.Categories.options do %>
             <li class="nav-item">
                 <%= link category, to: Routes.page_path(@conn, :category, category), class: "nav-link" %>
             </li>

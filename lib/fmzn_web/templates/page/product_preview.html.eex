@@ -6,7 +6,7 @@
             </div>
             <div class="col-sm-8">
                 <div><%= @product.title %></div>
-                <div><%= @product.price * @product.discount %></div>
+                <div>£<%= currency_format(@product.price * @product.discount) %></div>
                 <div><%= @product.description %></div>
             </div>
             <div class="col-sm-2">

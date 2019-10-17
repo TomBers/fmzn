@@ -23,9 +23,9 @@ defmodule Fmzn.Resources.Product do
   @doc false
   def changeset(product, attrs) do
     product
-    |> cast(attrs, [:title, :img, :description, :price, :discount])
+    |> cast(attrs, [:title, :img, :description, :price, :discount, :primary_category, :secondary_category])
     |> cast_assoc(:productpoints, required: true)
     |> cast_assoc(:reviews, required: false)
-    |> validate_required([:title, :img, :description, :price, :discount])
+    |> validate_required([:title, :description, :price, :discount])
   end
 end

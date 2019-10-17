@@ -4,14 +4,12 @@
     <list default="true" id="40879142-e50c-4819-a8e8-8ca64bce72d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/phoenix.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/phoenix.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn/resources.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn/resources.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/controllers/page_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/controllers/page_controller.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn/resources/product.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn/resources/product.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/page/basket.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/page/basket.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/page/index.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/page/index.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/_build/dev/lib/connection/" />
@@ -53,11 +51,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" column="113" selection-start-line="21" selection-start-column="113" selection-end-line="21" selection-end-column="113" />
+            <state relative-caret-position="357">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/categories.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/product.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="15" column="142" selection-start-line="15" selection-start-column="142" selection-end-line="15" selection-end-column="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -76,6 +137,7 @@
       <find>review_product</find>
       <find>shoping_basket</find>
       <find>shopping_basket</find>
+      <find>select</find>
     </findStrings>
     <replaceStrings>
       <replace>/images</replace>
@@ -88,7 +150,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/priv/repo/migrations/20191016085705_create_productpoints.exs" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex" />
         <option value="$PROJECT_DIR$/priv/repo/migrations/20191016092706_add_category.exs" />
         <option value="$PROJECT_DIR$/model_generators.txt" />
         <option value="$PROJECT_DIR$/lib/fmzn/resources/review.ex" />
@@ -96,11 +157,9 @@
         <option value="$PROJECT_DIR$/assets/package.json" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/review_controller.ex" />
-        <option value="$PROJECT_DIR$/lib/fmzn/resources/product.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/plugs/shopping_cart.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/advert.html.eex" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/share.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/products.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/page_controller.ex" />
@@ -108,13 +167,17 @@
         <option value="$PROJECT_DIR$/lib/fmzn_web/router.ex" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt" />
         <option value="$PROJECT_DIR$/assets/css/phoenix.css" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/index.html.eex" />
-        <option value="$PROJECT_DIR$/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/basket.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex" />
+        <option value="$PROJECT_DIR$/lib/fmzn/resources/categories.ex" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex" />
+        <option value="$PROJECT_DIR$/lib/fmzn/resources/product.ex" />
+        <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex" />
       </list>
     </option>
   </component>
@@ -206,12 +269,33 @@
               <item name="fmzn" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="fmzn_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="review" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmzn" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="fmzn_web" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
               <item name="fmzn" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmzn" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fmzn" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
@@ -310,24 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016092706_add_category.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model_generators.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/review/form.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -385,22 +455,8 @@
         <state relative-caret-position="-446" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/node_modules/yeoman-environment/node_modules/rxjs/_esm5/internal/OuterSubscriber.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/product.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/plugs/shopping_cart.ex">
       <provider selected="true" editor-type-id="text-editor">
@@ -420,13 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -465,24 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/page/index.html.eex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -500,24 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -528,10 +549,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016092706_add_category.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/advert.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/review/form.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="113" selection-start-line="21" selection-start-column="113" selection-end-line="21" selection-end-column="113" />
+        <state relative-caret-position="357">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/categories.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/product.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/views/product_view.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="15" column="142" selection-start-line="15" selection-start-column="142" selection-end-line="15" selection-end-column="142" />
         </state>
       </provider>
     </entry>

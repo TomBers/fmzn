@@ -13,9 +13,9 @@
         <div class="row">
             <div class="col product-details">
                 <div><a href="<%= Routes.page_path(@conn, :category, @product.primary_category) %>"><%= @product.primary_category %></a> <i class="fa fa-arrow-circle-right"></i> <a href="#"><%= @product.secondary_category %></a></div>
-                <div class="price"><del>£<%= @product.price %></del> £<%= @product.price * @product.discount %></div>
+                <div class="price"><del>£<%= currency_format(@product.price) %></del> £<%= currency_format(@product.price * @product.discount) %></div>
                 <div>SKU: <%= make_sku() %></div>
-                <div class="availibility">Availibility: <%= Enum.random(-100..10) %> in stock</div>
+                <div class="availibility">Availibility: <%= Enum.random(1..100) %> in stock</div>
                 <div><%= @product.description %></div>
                 <div>
                     <ul>

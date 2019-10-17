@@ -25,6 +25,14 @@
   <%= number_input f, :discount, step: "any" %>
   <%= error_tag f, :discount %>
 
+   <%= label f, :primary_category %>
+    <%= select f, :primary_category, Fmzn.Categories.options %>
+    <%= error_tag f, :primary_category %>
+
+    <%= label f, :secondary_category %>
+    <%= text_input f, :secondary_category %>
+    <%= error_tag f, :secondary_category %>
+
     <h2>Marketing points</h2>
    <%= inputs_for f, :productpoints, fn p -> %>
       <div class="form-group">
