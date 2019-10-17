@@ -30,6 +30,8 @@ defmodule FmznWeb.Router do
     get "/", PageController, :index
     post "/products/addtobasket/:product_id", ProductController, :add_to_basket
     get "/basket", PageController, :basket
+
+    get "/category/:category", PageController, :category
   end
 
   # Other scopes may use custom stacks.

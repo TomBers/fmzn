@@ -1,0 +1,8 @@
+<div class="share">
+<h4>Share to:</h4>
+    <div class="row">
+        <div class="col-sm-4"><button class="btn btn-outline-primary">ElderlyRelativePics</button></div>
+        <div class="col-sm-4"><button class="btn btn-outline-success">DirectToAngryMob</button></div>
+        <div class="col-sm-4"><button class="btn btn-outline-info">CoffeeAndPets</button></div>
+    </div>
+</div>

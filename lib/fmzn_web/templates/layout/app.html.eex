@@ -11,21 +11,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <a href="/basket">
-            <i class="fa fa-shopping-basket"></i> <%= length(Map.get(@conn.assigns, :basket, [])) %> items
-            <li><input type="text" name="search" placeholder="search"></li>
-            </a>
-          </ul>
-        </nav>
-        <a href="/products" class="phx-logo">
-          Fmzn
-        </a>
-      </section>
-    </header>
+
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     <!-- Brand/logo -->
+     <%= link "FMZN", to: Routes.page_path(@conn, :index), class: "navbar-brand" %>
+
+     <!-- Links -->
+     <ul class="navbar-nav">
+        <%= for category <- ["Books", "For Men", "For Women", "For X", "NSFW", "CD-Roms", "Pets", "Art", "Glamour"] do %>
+            <li class="nav-item">
+                <%= link category, to: Routes.page_path(@conn, :category, category), class: "nav-link" %>
+            </li>
+        <% end %>
+     </ul>
+     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a href="/basket"><i class="fa fa-shopping-basket"></i> <%= length(Map.get(@conn.assigns, :basket, [])) %> items</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>

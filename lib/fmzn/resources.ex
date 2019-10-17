@@ -27,6 +27,11 @@ defmodule Fmzn.Resources do
     |> Repo.all()
   end
 
+  def find_products_by_category(category) do
+    from(p in Product, where: p.primary_category == ^category)
+    |> Repo.all()
+  end
+
   @doc """
   Gets a single product.
 

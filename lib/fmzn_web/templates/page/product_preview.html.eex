@@ -1,0 +1,17 @@
+<div class="card basket-list">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-2">
+                <img class="thumbnail" src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
+            </div>
+            <div class="col-sm-8">
+                <div><%= @product.title %></div>
+                <div><%= @product.price * @product.discount %></div>
+                <div><%= @product.description %></div>
+            </div>
+            <div class="col-sm-2">
+                <a href="<%= Routes.product_path(@conn, :show, @product) %>"><button class="btn btn-outline-primary">See more</button></a>
+            </div>
+        </div>
+    </div>
+</div>

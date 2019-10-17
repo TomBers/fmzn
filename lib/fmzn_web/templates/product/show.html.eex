@@ -1,27 +1,37 @@
 <div class="row">
+    <div class="col">
+        <h1><%= @product.title %> <span class="badge badge-secondary">New</span></h1>
+    </div>
+</div>
+<div class="row">
     <div class="col-sm-4">
         <img src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
 
-        <%= render "advert.html", advert: @advert, conn: @conn %>
+
     </div>
     <div class="col-sm-8">
         <div class="row">
-        <div class="col-sm-10">
-            <h1><%= @product.title %> <span class="badge badge-secondary">New</span></h1>
-            <%= @product.description %>
-            <ul>
-            <%= for point <- @product.productpoints do %>
-                <li><%= point.txt %></li>
-            <% end %>
-            </ul>
+            <div class="col product-details">
+                <div><a href="<%= Routes.page_path(@conn, :category, @product.primary_category) %>"><%= @product.primary_category %></a> <i class="fa fa-arrow-circle-right"></i> <a href="#"><%= @product.secondary_category %></a></div>
+                <div class="price"><del>£<%= @product.price %></del> £<%= @product.price * @product.discount %></div>
+                <div>SKU: <%= make_sku() %></div>
+                <div class="availibility">Availibility: <%= Enum.random(-100..10) %> in stock</div>
+                <div><%= @product.description %></div>
+                <div>
+                    <ul>
+                        <%= for point <- @product.productpoints do %>
+                            <li><%= point.txt %></li>
+                        <% end %>
+                    </ul>
+                </div>
             <form action="/products/addtobasket/<%= @product.id %>" method="post">
                 <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
                  <%= submit "Buy Now" %>
-              </form>
+             </form>
+            <button class="btn btn-secondary">Buy with InstaCredit <sub>TM</sub></button>
+            <%= render "share.html" %>
+
         </div>
-        <div class="col-sm-2 price">
-            <del>£<%= @product.price %></del> £<%= @product.price * @product.discount %>
-      </div>
       </div>
     </div>
 </div>
@@ -32,11 +42,13 @@
         <h1><%= length(@product.reviews) %> Reviews</h1>
         <div class="row">
            <%= for review <- @product.reviews do %>
-              <div class="col"><div class="card">
-                                 <div class="card-body">
-                                   <%= review.score %> / 10 <br> <%= review.description %>
-                                 </div>
-                               </div></div>
+              <div class="col">
+                <div class="card">
+                     <div class="card-body">
+                            <%= review.score %> / 10 <br> <%= review.description %>
+                      </div>
+                </div>
+              </div>
           <% end %>
          </div>
         <h1>Leave a review</h1>
