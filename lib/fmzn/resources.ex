@@ -337,6 +337,8 @@ defmodule Fmzn.Resources do
   """
   def get_advert!(id), do: Repo.get!(Advert, id)
 
+  def get_advert(id), do: Repo.get(Advert, id)
+
   @doc """
   Creates a advert.
 

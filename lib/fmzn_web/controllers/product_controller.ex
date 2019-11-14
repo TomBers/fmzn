@@ -33,7 +33,7 @@ defmodule FmznWeb.ProductController do
     review = %Review{product_id: id}
     changeset = Resources.change_review(review)
 
-    advert = [] #Resources.get_advert!(1)
+    advert = Resources.get_advert(1)
 
     render(conn, "show.html", product: product, changeset: changeset, token: get_csrf_token(), advert: advert)
   end
