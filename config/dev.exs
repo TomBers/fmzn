@@ -70,6 +70,6 @@ config :phoenix, :plug_init_mode, :runtime
 config :fmzn, Fmzn.Repo,
   username: "postgres",
   password: "postgres",
-  database: "fmzn_dev",
+  database: "fmzn__dev",
   hostname: "localhost",
   pool_size: 10

@@ -1,5 +1,13 @@
 # Fmzn
 
+Insert products - `mix run insert_products.exs`
+
+`mix ecto.create`
+
+`mix ecto.migrate`
+
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

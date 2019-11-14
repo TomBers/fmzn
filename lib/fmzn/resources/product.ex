@@ -13,6 +13,7 @@ defmodule Fmzn.Resources.Product do
     field :title, :string
     field :primary_category, :string
     field :secondary_category, :string
+    field :slug, :string
 
     has_many :productpoints, ProductPoints, on_delete: :delete_all
     has_many :reviews, Review, on_delete: :delete_all
@@ -23,9 +24,11 @@ defmodule Fmzn.Resources.Product do
   @doc false
   def changeset(product, attrs) do
     product
-    |> cast(attrs, [:title, :img, :description, :price, :discount, :primary_category, :secondary_category])
+    |> cast(attrs, [:title, :img, :description, :price, :discount, :primary_category, :secondary_category, :slug])
+    |> unique_constraint(:slug)
     |> cast_assoc(:productpoints, required: true)
     |> cast_assoc(:reviews, required: false)
-    |> validate_required([:title, :description, :price, :discount])
+    |> validate_required([:title, :description, :price, :discount, :slug])
   end
+
 end

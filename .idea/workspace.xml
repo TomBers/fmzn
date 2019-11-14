@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40879142-e50c-4819-a8e8-8ca64bce72d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/fmzn/load__c_s_v.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn/load__c_s_v.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_generators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model_generators.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_s_v.exs" beforeDir="false" afterPath="$PROJECT_DIR$/insert_products.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn/resources/product.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn/resources/product.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst.csv" beforeDir="false" afterPath="$PROJECT_DIR$/products.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/_build/dev/lib/connection/" />
     <ignored path="$PROJECT_DIR$/_build/dev/lib/cowboy/" />
@@ -43,30 +48,72 @@
     <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/fmzn/load__c_s_v.ex">
+        <entry file="file://$PROJECT_DIR$/mix.exs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+            <state relative-caret-position="145">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c_s_v.exs">
+        <entry file="file://$PROJECT_DIR$/products.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret selection-end-column="113" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" autoColumnWidthOnOpen="true" rowLines="3">
+              <column index="0" width="300" />
+              <column index="1" width="300" />
+              <column index="2" width="136" />
+              <column index="3" width="80" />
+              <column index="4" width="152" />
+              <column index="5" width="300" />
+              <column index="6" width="300" />
+              <column index="7" width="300" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/dev.exs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="332" selection-start-line="7" selection-start-column="332" selection-end-line="7" selection-end-column="332" />
+            <state relative-caret-position="383">
+              <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/insert_products.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model_generators.txt">
+        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="153">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,6 +133,7 @@
       <find>shoping_basket</find>
       <find>shopping_basket</find>
       <find>select</find>
+      <find>fmzn_de</find>
     </findStrings>
     <replaceStrings>
       <replace>/images</replace>
@@ -105,7 +153,6 @@
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/review_controller.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/plugs/shopping_cart.ex" />
-        <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/advert.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/share.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/products.html.eex" />
@@ -119,7 +166,6 @@
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/layout/app.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn/resources/categories.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/form.html.eex" />
-        <option value="$PROJECT_DIR$/lib/fmzn/resources/product.ex" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/views/page_view.ex" />
@@ -127,15 +173,23 @@
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/show.html.eex" />
         <option value="$PROJECT_DIR$/mix.exs" />
         <option value="$PROJECT_DIR$/lib/fmzn/load__c_s_v.ex" />
-        <option value="$PROJECT_DIR$/c_s_v.exs" />
         <option value="$PROJECT_DIR$/model_generators.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/c_s_v.exs" />
+        <option value="$PROJECT_DIR$/priv/repo/migrations/20191114201640_add_product_slug.exs" />
+        <option value="$PROJECT_DIR$/lib/fmzn/resources/product.ex" />
+        <option value="$PROJECT_DIR$/products.csv" />
+        <option value="$PROJECT_DIR$/config/dev.exs" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/insert_products.exs" />
+        <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="53" />
-    <option name="width" value="1680" />
-    <option name="height" value="976" />
+    <option name="y" value="23" />
+    <option name="width" value="840" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -145,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,10 +206,15 @@
               <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
               <item name="fmzn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fmzn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -188,7 +246,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="976" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13441832" />
@@ -202,9 +260,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.3295583" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.55429864" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36466593" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -213,16 +271,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016085604_create_products.exs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016085705_create_productpoints.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/edit.html.eex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -294,13 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/controllers/page_controller.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -350,13 +391,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_21.txt" />
     <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/page/basket.html.eex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -420,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/product.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/categories.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -448,22 +476,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mix.exs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn/resources.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tst.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmzn/load__c_s_v.ex">
       <provider selected="true" editor-type-id="text-editor">
@@ -472,17 +490,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c_s_v.exs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Login_magic_link.txt" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191114201640_add_product_slug.exs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="332" selection-start-line="7" selection-start-column="332" selection-end-line="7" selection-end-column="332" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn/resources/product.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016085604_create_products.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/migrations/20191016085705_create_productpoints.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model_generators.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fmzn.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-column="113" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" autoColumnWidthOnOpen="true" rowLines="3">
+          <column index="0" width="300" />
+          <column index="1" width="300" />
+          <column index="2" width="136" />
+          <column index="3" width="80" />
+          <column index="4" width="152" />
+          <column index="5" width="300" />
+          <column index="6" width="300" />
+          <column index="7" width="300" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insert_products.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
