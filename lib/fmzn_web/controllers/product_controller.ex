@@ -29,8 +29,8 @@ defmodule FmznWeb.ProductController do
   end
 
   def show(conn, %{"id" => id}) do
-    product = Resources.get_product!(id)
-    review = %Review{product_id: id}
+    product = Resources.get_product_by_slug!(id)
+    review = %Review{product_id: product.id}
     changeset = Resources.change_review(review)
 
     advert = Resources.get_advert(1)
@@ -64,7 +64,7 @@ defmodule FmznWeb.ProductController do
       {:ok, product} ->
         conn
         |> put_flash(:info, "Product updated successfully.")
-        |> redirect(to: Routes.product_path(conn, :show, product))
+        |> redirect(to: Routes.product_path(conn, :show, product.slug))
 
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "edit.html", product: product, changeset: changeset)

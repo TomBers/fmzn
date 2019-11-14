@@ -48,6 +48,8 @@ defmodule Fmzn.Resources do
   """
   def get_product!(id), do: Repo.get!(Product, id) |> Repo.preload([:productpoints, :reviews])
 
+  def get_product_by_slug!(slug), do: Repo.get_by!(Product, slug: slug) |> Repo.preload([:productpoints, :reviews])
+
   @doc """
   Creates a product.
 

@@ -10,7 +10,7 @@
                 <div><%= @product.description %></div>
             </div>
             <div class="col-sm-2">
-                <a href="<%= Routes.product_path(@conn, :show, @product) %>"><button class="btn btn-outline-primary">See more</button></a>
+                <a href="<%= Routes.product_path(@conn, :show, @product.slug) %>"><button class="btn btn-outline-primary">See more</button></a>
             </div>
         </div>
     </div>

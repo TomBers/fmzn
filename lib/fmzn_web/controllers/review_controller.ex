@@ -20,7 +20,7 @@ defmodule FmznWeb.ReviewController do
       {:ok, review} ->
         conn
         |> put_flash(:info, "Review created successfully.")
-        |> redirect(to: Routes.product_path(conn, :show, Map.get(review_params, "product_id")))
+        |> redirect(to: Routes.product_path(conn, :show, Map.get(review_params, "product_slug")))
 
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "new.html", changeset: changeset)
