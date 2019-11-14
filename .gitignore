@@ -2,7 +2,7 @@
 /_build/
 
 .idea
-
+.idea/workspace.xml
 # If you run "mix test --cover", coverage assets end up here.
 /cover/
 

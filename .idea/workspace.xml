@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40879142-e50c-4819-a8e8-8ca64bce72d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn/resources.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn/resources.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/controllers/review_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/controllers/review_controller.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/page/product_preview.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/_build/dev/lib/connection/" />
     <ignored path="$PROJECT_DIR$/_build/dev/lib/cowboy/" />
@@ -76,15 +69,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/fmzn_web/router.ex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
@@ -102,11 +86,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -194,7 +187,6 @@
         <option value="$PROJECT_DIR$/config/dev.exs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/insert_products.exs" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/mix.exs" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/router.ex" />
@@ -204,6 +196,7 @@
         <option value="$PROJECT_DIR$/lib/fmzn/resources/review.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/controllers/product_controller.ex" />
         <option value="$PROJECT_DIR$/lib/fmzn_web/templates/product/review.html.eex" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -550,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insert_products.exs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -674,6 +660,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
