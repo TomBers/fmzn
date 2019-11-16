@@ -1,8 +1,8 @@
-<div class="card basket-list">
-    <div class="card-body">
+<li class="list-group-item">
+    <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <img class="thumbnail" src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
+                <img src="<%= Routes.static_path(@conn, "/images/placeholder-small.png") %>">
             </div>
             <div class="col-sm-8">
                 <div><%= @product.title %></div>
@@ -14,4 +14,4 @@
             </div>
         </div>
     </div>
-</div>
+</li>

@@ -8,14 +8,14 @@ defmodule FmznWeb.PageController do
   end
 
   def basket(conn, _params) do
-    pids = Enum.uniq(get_basket(conn))
-    products = Resources.find_products(pids)
-    render(conn, "basket.html", products: products)
+    slugs = Enum.uniq(get_basket(conn))
+    products = Resources.find_products(slugs)
+    render(conn, "basket.html", products: Enum.shuffle(products))
   end
 
   def category(conn, %{"category" => category}) do
     products = Resources.find_products_by_category(category)
-    render(conn, "products.html", products: products, category: category)
+    render(conn, "products.html", products: Enum.shuffle(products), category: category)
   end
 
   def get_basket(conn) do

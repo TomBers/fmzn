@@ -23,7 +23,7 @@ defmodule Fmzn.Resources do
   end
 
   def find_products(product_list) do
-    from(p in Product, where: p.id in ^product_list)
+    from(p in Product, where: p.slug in ^product_list)
     |> Repo.all()
   end
 

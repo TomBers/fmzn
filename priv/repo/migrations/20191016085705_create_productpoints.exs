@@ -3,7 +3,7 @@ defmodule Fmzn.Repo.Migrations.CreateProductpoints do
 
   def change do
     create table(:productpoints) do
-      add :txt, :string
+      add :txt, :text
       add :product_id, references(:products, on_delete: :nothing)
 
       timestamps()

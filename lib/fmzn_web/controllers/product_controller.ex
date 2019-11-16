@@ -39,7 +39,7 @@ defmodule FmznWeb.ProductController do
   end
 
   def add_to_basket(conn, %{"product_id" => pid}) do
-    product = Resources.get_product!(pid)
+    product = Resources.get_product_by_slug!(pid)
     b = get_session(conn, :basket)
     shopping_basket = case b do
       nil -> [pid]
@@ -47,7 +47,7 @@ defmodule FmznWeb.ProductController do
     end
     put_session(conn, :basket, shopping_basket)
     |> put_flash(:info, "Added to shopping cart successfully.")
-    |> redirect(to: Routes.product_path(conn, :show, product))
+    |> redirect(to: Routes.product_path(conn, :show, product.slug))
 
   end
 

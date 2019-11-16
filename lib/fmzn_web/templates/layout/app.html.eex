@@ -7,34 +7,45 @@
     <title>Fmzn · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </head>
   <body>
 
+<!-- NAV -->
 
-   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-     <!-- Brand/logo -->
-     <%= link "FMZN", to: Routes.page_path(@conn, :index), class: "navbar-brand" %>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="white-text">Welcome to FMZN</div>
+            </nav>
+            <ul class="nav nav-tabs bg-dark">
+                <li class="nav-item">
+                    <a class="nav-link <%= if @conn.request_path == "/", do: 'active' %>" href="/">FMZN</a>
+                </li>
+                <%= for category <- Fmzn.Categories.options do %>
+                    <li class="nav-item">
+                        <%= link category, to: Routes.page_path(@conn, :category, category), class: get_class(@conn.request_path, category) %>
+                    </li>
+                <% end %>
+                <li class="nav-item ml-auto checkout">
+                    <a href="/basket"><i class="fa fa-shopping-basket"></i> <%= length(Map.get(@conn.assigns, :basket, [])) %> items</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-     <!-- Links -->
-     <ul class="navbar-nav">
-        <%= for category <- Fmzn.Categories.options do %>
-            <li class="nav-item">
-                <%= link category, to: Routes.page_path(@conn, :category, category), class: "nav-link" %>
-            </li>
-        <% end %>
-     </ul>
-     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-       <ul class="navbar-nav">
-         <li class="nav-item">
-           <a href="/basket"><i class="fa fa-shopping-basket"></i> <%= length(Map.get(@conn.assigns, :basket, [])) %> items</a>
-         </li>
-       </ul>
-     </div>
-   </nav>
 
-    <main role="main" class="container">
+<!-- /NAV -->
+
+    <main role="main" class="container-fluid">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>

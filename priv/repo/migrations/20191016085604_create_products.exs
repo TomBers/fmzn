@@ -3,9 +3,9 @@ defmodule Fmzn.Repo.Migrations.CreateProducts do
 
   def change do
     create table(:products) do
-      add :title, :string
+      add :title, :text
       add :img, :string
-      add :description, :string
+      add :description, :text
       add :price, :float
       add :discount, :float
 

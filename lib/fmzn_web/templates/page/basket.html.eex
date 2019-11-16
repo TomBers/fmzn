@@ -3,4 +3,4 @@
     <%= render "product_preview.html", conn: @conn, product: product %>
 <% end %>
 
-<button>Buy all immediately</button>
+<button class="float-right">Buy all immediately</button>

@@ -2,6 +2,13 @@
 
 @import "./phoenix.css";
 
+.white-text {
+    color: white;
+}
+
+.checkout {
+    padding-right:25px;
+}
 
 /* Alerts and form errors */
 .alert {
@@ -51,7 +58,8 @@
 }
 
 button {
-    width: 100%
+
+    font-size: 1.5vw;
 }
 
 .share {
