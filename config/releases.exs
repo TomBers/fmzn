@@ -1,19 +1,20 @@
 import Config
 
-# In this file, we keep production configuration that
-# you'll likely want to automate and keep away from
-# your version control system.
-#
-# You should document the content of this
-# file or create a script for recreating it, since it's
-# kept out of version control and might be hard to recover
-# or recreate for your teammates (or yourself later on).
+db_user = System.get_env("DB_USER", "postgres")
+db_password = System.get_env("DB_PASSWORD", "postgres")
+db_host = System.get_env("DB_HOST", "localhost")
+
+IO.inspect(db_host)
+IO.inspect(db_user)
+
+
 config :fmzn, FmznWeb.Endpoint,
   secret_key_base: "LkrIIPvPC9XgMqkhgH1RsOn+CyJ+Th/dVRKSxxjE86A+oeEPIal9Gr4DXOffUKjR"
 
 # Configure your database
 config :fmzn, Fmzn.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: db_user,
+  password: db_password,
   database: "fmzn_prod",
+  hostname: db_host,
   pool_size: 15

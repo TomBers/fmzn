@@ -1,4 +1,4 @@
-defmodule MyApp.Release do
+defmodule Fmzn.Release do
   @app :fmzn
 
   def migrate do

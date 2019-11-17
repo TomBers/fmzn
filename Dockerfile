@@ -31,7 +31,7 @@ COPY lib lib
 RUN mix compile
 
 # build release
-COPY rel rel
+#COPY prod prod
 RUN mix release
 
 # prepare release image
@@ -46,3 +46,9 @@ RUN chown -R nobody: /app
 USER nobody
 
 ENV HOME=/app
+
+COPY entry.sh .
+
+COPY products.csv .
+
+CMD ["./entry.sh"]

@@ -6,7 +6,22 @@ Insert products - `mix run insert_products.exs`
 
 `mix ecto.migrate`
 
+run docker - `docker run -i -t -p 4000:4000 fmzn_web`
 
+start App cmd `bin/fmzn start`
+`_build/prod/rel/fmzn/bin/fmzn start`
+
+`_build/prod/rel/fmzn/bin/fmzn eval Fmzn.Release.migrate`
+
+`docker-compose build`
+
+`docker-compose up`
+
+`docker-compose down`
+
+`docker-compose kill`
+
+https://dev.to/ilsanto/deploy-a-phoenix-app-with-docker-stack-1j9c
 
 To start your Phoenix server:
 

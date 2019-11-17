@@ -17,7 +17,7 @@ defmodule FmznWeb.ReviewController do
   def create(conn, %{"review" => review_params}) do
 
     case Resources.create_review(review_params) do
-      {:ok, review} ->
+      {:ok, _review} ->
         conn
         |> put_flash(:info, "Review created successfully.")
         |> redirect(to: Routes.product_path(conn, :show, Map.get(review_params, "product_slug")))
