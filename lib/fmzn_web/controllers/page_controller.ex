@@ -25,4 +25,10 @@ defmodule FmznWeb.PageController do
       _ -> b
     end
   end
+
+  def load_products(conn, _params) do
+    Fmzn.LoadProducts.run()
+    render(conn, "index.html")
+  end
+
 end

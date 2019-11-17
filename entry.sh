@@ -10,6 +10,3 @@
 
 ./bin/fmzn eval Fmzn.Release.migrate
 ./bin/fmzn start
-
-sleep 5
-./bin/fmzn eval Fmzn.LoadProducts.run
