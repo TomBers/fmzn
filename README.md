@@ -31,6 +31,15 @@ In container - start App cmd `bin/fmzn start`
 `_build/prod/rel/fmzn/bin/fmzn eval Fmzn.Release.migrate`
 
 
+### Heroku
+
+Build - `heroku container:push web`
+
+Deploy - `heroku container:release web`
+
+`heroku logs --tail`
+
+
 https://dev.to/ilsanto/deploy-a-phoenix-app-with-docker-stack-1j9c
 
 Form for product suggestions:
