@@ -1,12 +1,8 @@
 import Config
 
-db_user = System.get_env("DB_USER", "postgres")
-db_password = System.get_env("DB_PASSWORD", "postgres")
-db_host = System.get_env("DB_HOST", "localhost")
-db_name = System.get_env("DB_NAME", "fmzn_prod")
+db_url = System.get_env("DATABASE_URL")
 
-IO.inspect(db_host)
-IO.inspect(db_user)
+IO.inspect(db_url)
 
 
 config :fmzn, FmznWeb.Endpoint,
@@ -14,8 +10,5 @@ config :fmzn, FmznWeb.Endpoint,
 
 # Configure your database
 config :fmzn, Fmzn.Repo,
-  username: db_user,
-  password: db_password,
-  database: db_name,
-  hostname: db_host,
+  url: db_url,
   pool_size: 15
