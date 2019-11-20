@@ -1,6 +1,4 @@
 <h1><%= @category %></h1>
-<ul class="list-group">
-    <%= for product <- @products do %>
-        <%= render "product_preview.html", conn: @conn, product: product %>
-    <% end %>
-</ul>
+<%= for product <- @products do %>
+    <%= render "product_preview.html", conn: @conn, product: product %>
+<% end %>

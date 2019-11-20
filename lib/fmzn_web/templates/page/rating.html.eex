@@ -1,0 +1,11 @@
+<div class="ratings-container">
+<%= for i <- 1..5 do %>
+    <%= if(i <= @rating) do %>
+        <div class="clip-star"></div>
+        <% else %>
+        <div class="clip-star-empty"></div>
+        <% end %>
+
+<% end %>
+ / <%= Enum.random(1..1000) %>
+</div>
