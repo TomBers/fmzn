@@ -21,5 +21,6 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       DB_HOST: ${DB_HOST}
       SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      DATABASE_URL: ${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${POSTGRES_DB}
     depends_on:
       - database
