@@ -53,5 +53,8 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dd83adff830b885"></script>
+
   </body>
 </html>

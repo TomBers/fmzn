@@ -4,12 +4,11 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-4">
-        <img src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
-
+    <div class="col-sm-4 col-xs-12">
+        <img class="rounded float-left" src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
 
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-8 col-xs-12">
         <div class="row">
             <div class="col product-details">
                 <div><a href="<%= Routes.page_path(@conn, :category, @product.primary_category) %>"><%= @product.primary_category %></a> <i class="fa fa-arrow-circle-right"></i> <a href="#"><%= @product.secondary_category %></a></div>
@@ -40,7 +39,7 @@
 
 
 <div class="row justify-content-end">
-    <div class="col-sm-8">
+    <div class="col-sm-8 col-xs-12">
         <h1><%= length(@product.reviews) %> Reviews</h1>
         <div class="row">
            <%= for review <- @product.reviews do %>
