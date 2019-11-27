@@ -17,7 +17,7 @@ defmodule FmznWeb.ProductView do
     if (product.img) do
       product.img
     else
-      Routes.static_path(@conn, "/images/placeholder.png")
+      Routes.static_path(conn, "/images/placeholder.png")
     end
   end
 
