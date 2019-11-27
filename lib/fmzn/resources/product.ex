@@ -14,6 +14,7 @@ defmodule Fmzn.Resources.Product do
     field :primary_category, :string
     field :secondary_category, :string
     field :slug, :string
+    field :visible, :boolean
 
     has_many :productpoints, ProductPoints, on_delete: :delete_all
     has_many :reviews, Review, on_delete: :delete_all

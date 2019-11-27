@@ -15,8 +15,8 @@ defmodule FmznWeb.PageController do
   end
 
   def category(conn, %{"category" => category}) do
-    products = Resources.find_products_by_category(category)
-    render(conn, "products.html", products: Enum.shuffle(products), category: category)
+    products = Resources.find_products_by_category(category) |> Enum.shuffle
+    render(conn, "products.html", products: products, category: category)
   end
 
   def get_basket(conn) do

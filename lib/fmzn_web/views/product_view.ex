@@ -13,4 +13,12 @@ defmodule FmznWeb.ProductView do
     Float.floor(val, 2)
   end
 
+  def image_path(conn, product) do
+    if (product.img) do
+      product.img
+    else
+      Routes.static_path(@conn, "/images/placeholder.png")
+    end
+  end
+
 end

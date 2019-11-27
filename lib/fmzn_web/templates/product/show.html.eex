@@ -5,7 +5,7 @@
 </div>
 <div class="row">
     <div class="col-sm-4 col-xs-12">
-        <img class="rounded float-left" src="<%= Routes.static_path(@conn, "/images/placeholder.png") %>">
+        <img class="rounded float-left" src="<%= image_path(@conn, @product) %>">
 
     </div>
     <div class="col-sm-8 col-xs-12">

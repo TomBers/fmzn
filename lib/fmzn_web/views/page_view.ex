@@ -4,4 +4,12 @@ defmodule FmznWeb.PageView do
   def currency_format(val) do
     Float.floor(val, 2)
   end
+
+  def image_path(conn, product) do
+    if (product.img) do
+      product.img
+    else
+      Routes.static_path(conn, "/images/placeholder-small.png")
+    end
+  end
 end

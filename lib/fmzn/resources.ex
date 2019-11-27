@@ -28,7 +28,7 @@ defmodule Fmzn.Resources do
   end
 
   def find_products_by_category(category) do
-    from(p in Product, where: p.primary_category == ^category)
+    from(p in Product, where: p.primary_category == ^category and p.visible)
     |> Repo.all()
   end
 
