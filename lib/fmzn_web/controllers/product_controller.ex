@@ -33,9 +33,11 @@ defmodule FmznWeb.ProductController do
     review = %Review{product_id: product.id}
     changeset = Resources.change_review(review)
 
+    random_products = Resources.find_random_products()
+
     advert = Resources.get_advert(1)
 
-    render(conn, "show.html", product: product, changeset: changeset, token: get_csrf_token(), advert: advert)
+    render(conn, "show.html", product: product, changeset: changeset, token: get_csrf_token(), advert: advert, random_products: random_products)
   end
 
   def add_to_basket(conn, %{"product_id" => pid}) do

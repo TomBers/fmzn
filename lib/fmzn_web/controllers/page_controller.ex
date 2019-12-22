@@ -28,7 +28,7 @@ defmodule FmznWeb.PageController do
   end
 
   def load_products(conn, _params) do
-    Fmzn.LoadProducts.run()
+    Fmzn.LoadProducts.load_json()
     render(conn, "index.html")
   end
 

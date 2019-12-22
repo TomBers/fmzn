@@ -51,4 +51,6 @@ COPY entry.sh .
 
 COPY products.csv .
 
+COPY products.json .
+
 CMD ["./entry.sh"]

@@ -31,13 +31,17 @@
              </form>
             <button class="btn btn-secondary">Buy with InstaCredit <sub>TM</sub></button>
             <%= render "share.html" %>
-
         </div>
       </div>
     </div>
 </div>
-
-
+<br />
+<div class="row justify-content-end">
+    <div class="col-sm-8 col-xs-12">
+        <%= render "alsolike.html", random_products: @random_products, conn: @conn %>
+    </div>
+</div>
+<br />
 <div class="row justify-content-end">
     <div class="col-sm-8 col-xs-12">
         <h1><%= length(@product.reviews) %> Reviews</h1>

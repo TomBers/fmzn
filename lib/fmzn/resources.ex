@@ -32,6 +32,10 @@ defmodule Fmzn.Resources do
     |> Repo.all()
   end
 
+  def find_random_products do
+    from(Product, order_by: fragment("RANDOM()"), limit: 3) |> Repo.all
+  end
+
   @doc """
   Gets a single product.
 

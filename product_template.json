@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "description": "",
+  "primary_category": "",
+  "secondary_category": "",
+  "price": 11.22,
+  "discount": 0.9,
+  "bp1": "",
+  "bp2": "",
+  "bp3": ""
+}
+
+primary_category has to be one of "lib/fmzn/resources/categories.ex" (["Books", "Lifestyle", "Kids", "Health"])
+secondary_category - anything
+
+price a float
+discount - a percentage between 0 and 1
+
+bp* - bullet points for products
