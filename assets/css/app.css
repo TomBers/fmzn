@@ -1,5 +1,9 @@
 /* This file is for your main application css. */
 
+.preview {
+    max-width: 200px;
+    max-height: 200px;
+}
 .white-text {
     color: white;
 }

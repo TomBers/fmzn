@@ -1,5 +1,5 @@
 <section class="phx-hero">
-  <h1>Welcome to Fmzn</h1>
-  <h2>For all your desires and more</h2>
+  <h1>For all your desires and more</h1>
+  <%= render "alsolike.html", random_products: @random_products, conn: @conn %>
 </section>
 

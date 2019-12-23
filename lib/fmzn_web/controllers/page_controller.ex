@@ -5,7 +5,8 @@ defmodule FmznWeb.PageController do
 
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    random_products = Resources.find_random_products()
+    render(conn, "index.html", random_products: random_products)
   end
 
   def basket(conn, _params) do
