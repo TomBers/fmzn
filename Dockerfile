@@ -49,7 +49,7 @@ ENV HOME=/app
 
 COPY entry.sh .
 
-COPY products.csv .
+# COPY products.csv .
 
 COPY products.json .
 
