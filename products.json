@@ -184,6 +184,50 @@
     "discount": 0.2,
     "bp1": "Display for all to see your commitment to your workers",
     "bp2": "3 year guarantee* (Does not cover workers lives)",
-    "bp3": "Supports weights upto 120kg from 5 stories"
+    "bp3": "Supports weights up to 120kg from 5 stories"
+  },
+  {
+    "title": "Toy Brunch Set",
+    "description": "Brunch like mommy.  This set allows your children to role play your favourite meal. Meet friends, drink coffee and pick at cakes. Includes",
+    "primary_category": "Kids",
+    "secondary_category": "Toys",
+    "price": 39.99,
+    "discount": 0.4,
+    "bp1": "Macaroons, Half eaten cake",
+    "bp2": "Flat white and cafe late",
+    "bp3": "Avocado!"
+  },
+  {
+    "title": "Toy collateralized debt obligations",
+    "description": "All the fun ofr bundled debt in a box.  Get your kids comfortable with debt from an early age. Each set includes",
+    "primary_category": "Kids",
+    "secondary_category": "Toys",
+    "price": 29.99,
+    "discount": 0.9,
+    "bp1": "AAA rated morgage bonds",
+    "bp2": "Trade a range of complex financial derivatives at home",
+    "bp3": "Letter to Standard and Poors manipulating ratings"
+  },
+  {
+    "title": "Ginger bread Social Housing",
+    "description": "Recreate your favourite brutalist mass housing.  Each identical bloc is designed by Ernő Goldfinger. Order singularly or in oppressive blocks of a hundred.",
+    "primary_category": "Kids",
+    "secondary_category": "Decoration",
+    "price": 59.99,
+    "discount": 0.7,
+    "bp1": "Gluten free",
+    "bp2": "Recreate the monolithic and blocky appearance with a rigid geometric style and large-scale use of poured concrete",
+    "bp3": "Includes frosting"
+  },
+  {
+    "title": "Ethical Bag covers",
+    "description": "Worried your consumer choices are causing social embrassement. Want to enjoy your favourite indulgences without the stigma. Our Ethical bag covers means you dont have compramise. Comes in small, large and bucket size. Ideal for food, fast fashion and more",
+    "primary_category": "Lifestyle",
+    "secondary_category": "Ethical",
+    "price": 15.22,
+    "discount": 0.1,
+    "bp1": "100% bio-degradable",
+    "bp2": "Available with a range of ethical positions - Animal rights, the environment and human rights",
+    "bp3": "10p from each purchase will be given to charity"
   }
 ]

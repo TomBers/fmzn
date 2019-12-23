@@ -1,7 +1,7 @@
 defmodule Fmzn.Categories do
 
   def options do
-    ["Books", "Lifestyle", "Kids", "Health"]
+    ["Books", "Lifestyle", "Kids"]
   end
 
 end
