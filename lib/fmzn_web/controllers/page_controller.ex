@@ -29,8 +29,8 @@ defmodule FmznWeb.PageController do
   end
 
   def load_products(conn, _params) do
-    Fmzn.LoadProducts.load_json()
-    render(conn, "index.html")
+    prods = Fmzn.LoadProducts.load_json_web()
+    render(conn, "insert.html", prods: prods)
   end
 
 end

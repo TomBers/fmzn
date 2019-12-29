@@ -2,28 +2,41 @@ alias Fmzn.Resources
 
 defmodule Fmzn.LoadProducts do
 
-  def run do
 
-    NimbleCSV.define(MyParser, separator: ",", escape: "\"")
-
-    "products.csv"
-    |> File.stream!
-    |> MyParser.parse_stream
-    |> Enum.map(fn [title, description, category, secondary_category, price, discount, bp1, bp2, bp3] -> Resources.create_product(%{title: title, description: description, discount: discount, primary_category: category, secondary_category: secondary_category, price: price, productpoints: [%{txt: bp1}, %{txt: bp2}, %{txt: bp3} ], slug: title |> String.downcase |> String.replace(" ", "-")}) end)
-
+  def load_json_web do
+    web_request("https://tombers.github.io/fmzn/products.json")
+    |> store_entries
   end
 
-  def load_json do
+  def load_json_local do
     {:ok, json} = get_json_data("products.json")
+    store_entries(json)
+  end
 
-    json
-    |> Enum.map(fn(entry) -> Resources.create_product(convert_entry_to_dict(entry)) end)
+  def store_entries(entries) do
+    entries |> Enum.reduce(0, fn(entry, acc) -> insert_product(entry, acc) end)
+  end
 
+  def insert_product(entry, acc) do
+    case Resources.create_product(convert_entry_to_dict(entry)) do
+      {:ok, _} -> acc + 1
+      {:error, _} -> acc
+      end
+    end
+
+
+  def web_request(url) do
+    HTTPoison.start
+    case HTTPoison.get url do
+    {:ok, %HTTPoison.Response{status_code: 200, body: body}} -> Jason.decode!(body)
+    _ -> {:error}
+    end
   end
 
   def get_json_data(filename) do
-      with {:ok, body} <- File.read(filename),
-           {:ok, json} <- Jason.decode(body), do: {:ok, json}
+    with {:ok, body} <- File.read(filename),
+         {:ok, json} <- Jason.decode(body), do: {:ok, json}
+
   end
 
   def convert_entry_to_dict(entry) do
