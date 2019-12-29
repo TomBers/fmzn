@@ -27,7 +27,7 @@
                 <br />
             <form action="/products/addtobasket/<%= @product.slug %>" method="post">
                 <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
-                 <%= submit "Buy Now" %>
+                 <%= submit "Buy Now", class: "btn btn-primary btn-lg" %>
              </form>
             <button class="btn btn-secondary">Buy with InstaCredit <sub>TM</sub></button>
             <%= render "share.html" %>

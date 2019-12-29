@@ -5,7 +5,7 @@
             </div>
             <div class="col-sm-8 col-xs-12">
                 <h1><a href="<%= Routes.product_path(@conn, :show, @product.slug) %>"><%= @product.title %></a></h1>
-                 <%= render "rating.html", rating: Enum.random([0,1,2,3,4,5]) %>
+                 <%= render "rating.html", rating: Enum.random([1,2,3,4,5]) %>
                 <p><%= @product.description %></p>
                 <p class="price">£<%= currency_format(@product.price * @product.discount) %></p>
             </div>

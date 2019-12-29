@@ -1,5 +1,8 @@
 <section class="phx-hero">
-  <h1>For all your desires and more</h1>
+  <h1>Hi! Welcome to Fmzn, come in and take a look around</h1>
+  <p>Here are just 3 of the amazing products we have in stock, all at low low prices.</p>
+  <br />
+  <br />
   <%= render "alsolike.html", random_products: @random_products, conn: @conn %>
 </section>
 

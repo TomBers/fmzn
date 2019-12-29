@@ -3,9 +3,9 @@
     <div class="row">
         <%= for product <- @random_products do %>
         <div class="col-sm-4">
-            <a href="<%= Routes.product_path(@conn, :show, product.slug) %>"><%= product.title %></a>
+            <a class="product-title" href="<%= Routes.product_path(@conn, :show, product.slug) %>"><%= product.title %></a>
             <div class="col-xs-12">
-                <img class="rounded mx-auto d-block" src="<%= image_path(@conn, product) %>">
+                <img class="rounded mx-auto d-block preview" src="<%= image_path(@conn, product) %>">
             </div>
             <br>
             <%= product.description %>
