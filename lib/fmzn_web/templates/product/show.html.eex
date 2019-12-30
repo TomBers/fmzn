@@ -5,7 +5,7 @@
 </div>
 <div class="row">
     <div class="col-sm-4 col-xs-12">
-        <img class="rounded float-left" src="<%= image_path(@conn, @product) %>">
+        <img class="rounded float-left img-fluid" src="<%= image_path(@conn, @product) %>">
 
     </div>
     <div class="col-sm-8 col-xs-12">
@@ -29,6 +29,7 @@
                 <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
                  <%= submit "Buy Now", class: "btn btn-primary btn-lg" %>
              </form>
+             <br />
             <button class="btn btn-secondary">Buy with InstaCredit <sub>TM</sub></button>
             <%= render "share.html" %>
         </div>

@@ -5,7 +5,7 @@
         <div class="col-sm-4">
             <a class="product-title" href="<%= Routes.product_path(@conn, :show, product.slug) %>"><%= product.title %></a>
             <div class="col-xs-12">
-                <img class="rounded mx-auto d-block preview" src="<%= image_path(@conn, product) %>">
+                <img class="rounded mx-auto d-block img-fluid" src="<%= image_path(@conn, product) %>">
             </div>
             <br>
             <%= product.description %>
