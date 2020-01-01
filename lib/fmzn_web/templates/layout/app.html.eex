@@ -33,6 +33,7 @@
                                           </li>
                                       <% end %>
         </ul>
+        <a class="form-inline my-2 my-md-0 right-margin" href="/privacy">Settings</a>
         <a class="form-inline my-2 my-md-0" href="/basket"><i class="fa fa-shopping-basket right-margin"></i><%= length(Map.get(@conn.assigns, :basket, [])) %> items</a>
 
       </div>

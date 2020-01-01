@@ -7,7 +7,12 @@
 .product-title {
    font-size: x-large;
 }
-
+.card {
+   margin-bottom: 10px;
+}
+.disabled {
+   opacity: 0.5;
+}
 .preview {
     max-width: 250px;
     max-height: 250px;

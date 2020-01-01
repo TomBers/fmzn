@@ -1,0 +1,23 @@
+<h1>Privacy Settings</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <%= render "privacy_forms/personal.html" %>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <%= render "privacy_forms/location.html" %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <%= render "privacy_forms/sharing.html" %>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <%= render "privacy_forms/contact.html" %>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-large float-right" onclick="alert('Sorry, settings could not be changed')">
+        Update
+    </button>
+</div>

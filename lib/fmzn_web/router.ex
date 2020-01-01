@@ -28,6 +28,7 @@ defmodule FmznWeb.Router do
 
 
     get "/", PageController, :index
+    get "/privacy", PageController, :privacy
     get "/load", PageController, :load_products
     post "/products/addtobasket/:product_id", ProductController, :add_to_basket
     get "/basket", PageController, :basket
