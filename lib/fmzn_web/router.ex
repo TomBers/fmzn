@@ -21,12 +21,12 @@ defmodule FmznWeb.Router do
   scope "/", FmznWeb do
     pipe_through :browser
 
-    resources "/products", ProductController
-    resources "/productpoints", ProductPointsController
     resources "/reviews", ReviewController
 
 
     get "/", PageController, :index
+    get "/products", ProductController, :index
+    get "/products/:id", ProductController, :show
     get "/privacy", PageController, :privacy
     get "/load", PageController, :load_products
     post "/products/addtobasket/:product_id", ProductController, :add_to_basket
