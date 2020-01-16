@@ -2,6 +2,8 @@ defmodule Fmzn.Resources.ProductPoints do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @derive {Jason.Encoder, only: [:txt]}
+
   schema "productpoints" do
     field :txt, :string
     field :product_id, :id

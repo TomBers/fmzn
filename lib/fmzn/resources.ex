@@ -19,7 +19,7 @@ defmodule Fmzn.Resources do
 
   """
   def list_products do
-    Repo.all(Product)
+    Repo.all(Product) |> Repo.preload([:productpoints])
   end
 
   def find_products(product_list) do
