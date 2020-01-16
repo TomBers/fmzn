@@ -10,7 +10,7 @@
   "bp3": ""
 }
 
-primary_category has to be one of "lib/fmzn/resources/categories.ex" (["Books", "Lifestyle", "Kids", "Health"])
+primary_category *HAS* to be one of "lib/fmzn/resources/categories.ex" (["Books", "Lifestyle", "Kids"])
 secondary_category - anything
 
 price a float
