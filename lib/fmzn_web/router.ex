@@ -35,7 +35,8 @@ defmodule FmznWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", FmznWeb do
-  #   pipe_through :api
-  # end
+   scope "/api", FmznWeb do
+     pipe_through :api
+     get "/products", ProductController, :products_json
+   end
 end

@@ -37,5 +37,8 @@ defmodule FmznWeb.ProductController do
 
   end
 
+  def products_json(conn, _params) do
+    json(conn, Jason.encode!(Resources.list_products()))
+  end
 
 end

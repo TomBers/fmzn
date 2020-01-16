@@ -5,6 +5,8 @@ defmodule Fmzn.Resources.Product do
   alias Fmzn.Resources.ProductPoints
   alias Fmzn.Resources.Review
 
+  @derive {Jason.Encoder, only: [:title, :description, :img, :primary_category, :secondary_category, :productpoints]}
+
   schema "products" do
     field :description, :string
     field :discount, :float
