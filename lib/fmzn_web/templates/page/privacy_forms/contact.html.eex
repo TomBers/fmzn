@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        Contact
+    </div>
+    <div class="card-body">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="contactRadios" value="option1"
+                       checked>
+                Contact me through, email, notifications, phone and social media
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="contactRadios" value="option2">
+                Contact me only through email and social media
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="contactRadios" value="option3"
+                       disabled>
+                Don't inform me of great deals
+            </label>
+        </div>
+    </div>
+</div>

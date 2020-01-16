@@ -30,7 +30,7 @@ defmodule FmznWeb do
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/fmzn_web/templates",
+        root: "lib/fmzn_web/templates", pattern: "**/*",
         namespace: FmznWeb
 
       # Import convenience functions from controllers

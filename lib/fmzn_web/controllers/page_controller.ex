@@ -9,6 +9,10 @@ defmodule FmznWeb.PageController do
     render(conn, "index.html", random_products: random_products)
   end
 
+  def privacy(conn, _params) do
+    render(conn, "privacy.html")
+  end
+
   def basket(conn, _params) do
     slugs = Enum.uniq(get_basket(conn))
     products = Resources.find_products(slugs)

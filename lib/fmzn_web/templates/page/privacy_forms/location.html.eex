@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">
+        Location
+    </div>
+    <div class="card-body">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked>
+                Use location based data to provide a better experience
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" >
+                Hide items that are illegal to purchase in my region
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" >
+                Do not send data to local government
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" disabled>
+                Pretend you don't know where I am
+            </label>
+        </div>
+    </div>
+</div>
