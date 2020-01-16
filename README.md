@@ -13,6 +13,9 @@ or
 `@__FMZN__` on Twitter (https://twitter.com/__FMZN__)
 
 
+All product data is availible via API - https://fmzn.shop/api/products
+
+
 Written in https://www.phoenixframework.org/
 
 
