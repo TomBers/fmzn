@@ -24,7 +24,6 @@ defmodule FmznWeb.Router do
     resources "/products", ProductController
     resources "/productpoints", ProductPointsController
     resources "/reviews", ReviewController
-    resources "/adverts", AdvertController
 
 
     get "/", PageController, :index
