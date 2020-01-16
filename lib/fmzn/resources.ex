@@ -33,7 +33,11 @@ defmodule Fmzn.Resources do
   end
 
   def find_random_products do
-    from(Product, order_by: fragment("RANDOM()"), limit: 3) |> Repo.all
+    from(p in Product, where: p.visible, order_by: fragment("RANDOM()"), limit: 3) |> Repo.all
+  end
+
+  def find_random_products_excluding_this_one(product_id) do
+    from(p in Product, where: p.visible and p.slug != ^product_id, order_by: fragment("RANDOM()"), limit: 3) |> Repo.all
   end
 
   @doc """

@@ -33,7 +33,7 @@ defmodule FmznWeb.ProductController do
     review = %Review{product_id: product.id}
     changeset = Resources.change_review(review)
 
-    random_products = Resources.find_random_products()
+    random_products = Resources.find_random_products_excluding_this_one(id)
 
     advert = Resources.get_advert(1)
 
