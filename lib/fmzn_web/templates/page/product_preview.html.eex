@@ -1,13 +1,13 @@
     <div class="container-fluid product-preview">
         <div class="row">
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-2 col-xs-12">
                 <img class="rounded float-left img-fluid preview" src="<%= image_path(@conn, @product) %>">
             </div>
-            <div class="col-sm-8 col-xs-12">
-                <h1><a href="<%= Routes.product_path(@conn, :show, @product.slug) %>"><%= @product.title %></a></h1>
+            <div class="col-sm-10 col-xs-12">
+                <h1><%= @product.title %></h1>
+                <h3 class="price">£<%= currency_format(@product.price * @product.discount) %></h3>
                  <%= render "rating.html", rating: Enum.random([1,2,3,4,5]) %>
                 <p><%= @product.description %></p>
-                <p class="price">£<%= currency_format(@product.price * @product.discount) %></p>
             </div>
         </div>
     </div>

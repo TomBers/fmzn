@@ -5,6 +5,10 @@ defmodule FmznWeb.PageView do
     Float.floor(val, 2)
   end
 
+  def currency_format_pounds(val) do
+    Kernel.trunc(val)
+  end
+
   def max_description_length(description) do
     String.slice(description, 0..150)
   end
