@@ -7,5 +7,5 @@
         <% end %>
 
 <% end %>
- / <%= Enum.random(1..1000) %>
+    <span class="small-text"><%= Enum.random(1..1000) %></span>
 </div>

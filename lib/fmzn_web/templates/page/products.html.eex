@@ -1,4 +1,18 @@
 <h1><%= @category %></h1>
-<%= for product <- @products do %>
-    <%= render "product_preview.html", conn: @conn, product: product %>
-<% end %>
+<div class="row">
+    <%= for product <- @products do %>
+    <a href="<%= Routes.product_path(@conn, :show, product.slug) %>">
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="rounded mx-auto d-block img-fluid preview" src="<%= image_path(@conn, product) %>">
+                        <h5 class="card-title"><%= product.title %></h5></a>
+                        <h5 class="price"><sup>£</sup><%= currency_format_pounds(product.price * product.discount) %><sup><%= Enum.random(["99", "04", "55"])%></sup></h5>
+                        <h5 class="price-strikethrough">£<%= currency_format(product.price) %></h5>
+                        <%= render "rating.html", rating: Enum.random([1,2,3,4,5]) %>
+                    </div>
+                </div>
+            </div>
+        </a>
+    <% end %>
+</div>

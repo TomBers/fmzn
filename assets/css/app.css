@@ -1,5 +1,17 @@
 /* This file is for your main application css. */
 
+html {
+font-family: sans-serif;
+}
+
+a {
+    color: #0066c0;
+}
+
+.price-small-txt {
+    font-size: 10px;
+}
+
 .right-margin {
     margin-right: 10px;
 }
@@ -14,8 +26,8 @@
    opacity: 0.5;
 }
 .preview {
-    max-width: 250px;
-    max-height: 250px;
+    max-height: 200px;
+    margin-bottom: 20px;
 }
 .white-text {
     color: white;
@@ -39,11 +51,16 @@
     color: #B12704!important;
 }
 
+.price-strikethrough {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
 .ratings-container {
     align-items: center;
-      display: flex;
-      height: 10vh;
-      justify-content: left;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 12px;
 }
 
 .clip-star {
@@ -51,16 +68,22 @@
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   display: inline-block;
-  height: 25px;
-  width: 25px;
+  height: 10px;
+  width: 10px;
 }
 .clip-star-empty {
   background: black;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   display: inline-block;
-  height: 25px;
-  width: 25px;
+  height: 10px;
+  width: 10px;
+}
+
+.small-text {
+    margin-left: 5px;
+    color: grey;
+    font-size: 12px;
 }
 
 /* Alerts and form errors */
@@ -101,26 +124,17 @@
     font-size: 16px;
 }
 
-.price {
-    font-size: 20px;
-}
-
 .availibility {
     font-style: oblique;
     font-weight: 700;
 }
 
 button {
-
     font-size: 1.5vw;
 }
 
 .share {
     margin-top: 20px;
-}
-
-.price {
-    font-size: 16px;
 }
 
 del {

@@ -3,6 +3,6 @@
   <p>Here are just 3 of the amazing products we have in stock, all at low low prices.</p>
   <br />
   <br />
-  <%= render "alsolike.html", random_products: @random_products, conn: @conn %>
+  <%= render "products.html", products: @random_products, category: "", conn: @conn %>
 </section>
 
