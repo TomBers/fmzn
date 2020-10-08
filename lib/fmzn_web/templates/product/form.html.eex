@@ -5,38 +5,35 @@
     </div>
   <% end %>
 
+<div class="form-group">
   <%= label f, :title %>
-  <%= text_input f, :title %>
+  <%= text_input f, :title, class: "form-control" %>
   <%= error_tag f, :title %>
 
-  <%= label f, :img %>
-  <%= text_input f, :img %>
+  <%= label f, "Image URL" %>
+  <%= text_input f, :img, class: "form-control" %>
   <%= error_tag f, :img %>
 
   <%= label f, :description %>
-  <%= text_input f, :description %>
+  <%= text_input f, :description, class: "form-control" %>
   <%= error_tag f, :description %>
 
-  <%= label f, :price %>
-  <%= number_input f, :price, step: "any" %>
+  <%= label f, "Price £" %>
+  <%= number_input f, :price, step: "any", class: "form-control" %>
   <%= error_tag f, :price %>
 
-  <%= label f, :discount %>
-  <%= number_input f, :discount, step: "any" %>
-  <%= error_tag f, :discount %>
-
    <%= label f, :primary_category %>
-    <%= select f, :primary_category, Fmzn.Categories.options %>
+    <%= select f, :primary_category, Fmzn.Categories.options, class: "form-control" %>
     <%= error_tag f, :primary_category %>
 
     <%= label f, :secondary_category %>
-    <%= text_input f, :secondary_category %>
+    <%= text_input f, :secondary_category, class: "form-control" %>
     <%= error_tag f, :secondary_category %>
 
     <h2>Marketing points</h2>
    <%= inputs_for f, :productpoints, fn p -> %>
       <div class="form-group">
-        <%= label p, :txt, class: "control-label" %>
+        <%= label p, "Text", class: "control-label" %>
         <%= text_input p, :txt, class: "form-control" %>
         <%= error_tag p, :txt %>
       </div>
@@ -46,3 +43,5 @@
     <%= submit "Save" %>
   </div>
 <% end %>
+
+</div>
