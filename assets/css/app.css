@@ -14,8 +14,7 @@
    opacity: 0.5;
 }
 .preview {
-    max-width: 250px;
-    max-height: 250px;
+    max-height: 200px;
 }
 .white-text {
     color: white;

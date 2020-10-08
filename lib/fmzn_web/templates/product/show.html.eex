@@ -39,6 +39,7 @@
 <br />
 <div class="row justify-content-end">
     <div class="col-sm-8 col-xs-12">
+        <h4>People like you also like: </h4>
         <%= render "alsolike.html", random_products: @random_products, conn: @conn %>
     </div>
 </div>

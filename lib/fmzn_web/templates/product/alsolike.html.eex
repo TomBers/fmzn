@@ -1,15 +1,14 @@
-<div>
-<h1>People also liked: </h1>
-    <div class="row">
-        <%= for product <- @random_products do %>
-        <div class="col-sm-4">
-            <a class="product-title" href="<%= Routes.product_path(@conn, :show, product.slug) %>"><%= product.title %></a>
-            <div class="col-xs-12">
-                <img class="rounded mx-auto d-block img-fluid" src="<%= image_path(@conn, product) %>">
+<div class="row">
+    <%= for product <- @random_products do %>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <img class="rounded mx-auto d-block img-fluid preview" src="<%= image_path(@conn, product) %>">
+                <h5 class="card-title"><%= product.title %></h5>
+                <p class="card-text"><%= max_description_length(product.description) %></p>
+                <a href="<%= Routes.product_path(@conn, :show, product.slug) %>" class="btn btn-primary">Buy now</a>
             </div>
-            <br>
-            <%= product.description %>
-            </div>
-        <% end %>
+        </div>
     </div>
+    <% end %>
 </div>

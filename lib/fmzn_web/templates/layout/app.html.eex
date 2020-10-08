@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fmzn · Shop</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <script src="https://kit.fontawesome.com/2521f9f509.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
@@ -33,8 +33,18 @@
                                           </li>
                                       <% end %>
         </ul>
-        <a class="form-inline my-2 my-md-0 right-margin" href="/privacy">Settings</a>
-        <a class="form-inline my-2 my-md-0" href="/basket"><i class="fa fa-shopping-basket right-margin"></i><%= length(Map.get(@conn.assigns, :basket, [])) %> items</a>
+        <a class="form-inline my-2 my-md-0 right-margin" href="/privacy"><i class="fas fa-cogs fa-2x"></i></a>
+        <a class="form-inline my-2 my-md-0" href="/basket">
+                      <span class="fa-stack">
+    <!-- The icon that will wrap the number -->
+    <span class="fa fa-shopping-basket fa-stack-2x"></span>
+                          <!-- a strong element with the custom content, in this case a number -->
+    <strong class="fa-stack-1x" style="color: white; opacity: 0.8">
+        <%= length(Map.get(@conn.assigns, :basket, [])) %>
+    </strong>
+</span>
+
+        </a>
 
       </div>
     </nav>
@@ -42,7 +52,7 @@
 
 <!-- /NAV -->
 
-    <main role="main" class="container-fluid">
+    <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>
