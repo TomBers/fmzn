@@ -25,6 +25,7 @@ defmodule FmznWeb.Router do
 
 
     get "/", PageController, :index
+    get "/first", PageController, :first
     get "/products", ProductController, :index
     get "/products/new", ProductController, :new
     post "/products", ProductController, :create
