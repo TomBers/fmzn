@@ -8,19 +8,15 @@
   <p>We have a range of products you cannot find anywhere else. Perfect as a gift or simply a treat for yourself.</p>
   <br />
 
-  <h3>Win a prize</h3>
+  <h3>🏆 Spin the Prize Wheel 🏆</h3>
   <div class="row">
     <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-0">
-      <div class="roulette" style="display:block; margin: auto">
-        <img src="https://via.placeholder.com/728x90?text=Better+Luck+next+time"/>
-        <img src="https://via.placeholder.com/728x90?text=10%+Discount"/>
-        <img src="https://via.placeholder.com/728x90?text=20%+Discount"/>
-        <img src="https://via.placeholder.com/728x90?text=50%+Discount"/>
-        <img src="https://via.placeholder.com/728x90?text=90%+Discount"/>
-    </div>
-    <div class="col text-center">
-      <br>
-      <button class="btn btn-primary" onclick="spinWheel()">Click to win</button>
+      <div class="roulette hidden" onclick="spinWheel()">
+        <img src="<%= Routes.static_path(@conn, "/images/clickToWin.png") %>" />
+        <img src="<%= Routes.static_path(@conn, "/images/twenty.png") %>"/>
+        <img src="<%= Routes.static_path(@conn, "/images/fifty.png") %>"/>
+        <img src="<%= Routes.static_path(@conn, "/images/ninety.png") %>"/>
+        <img src="<%= Routes.static_path(@conn, "/images/betterLuck.png") %>" />
     </div>
   </div>
 </div>
@@ -38,7 +34,7 @@
 var options = {
 	speed : 2,
 	duration : 3,
-	stopImageNumber : 0
+	stopImageNumber : 4
 }
 
 var rouletter = $('div.roulette');
