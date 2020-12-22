@@ -13,6 +13,10 @@ defmodule FmznWeb.PageController do
     render(conn, "privacy.html")
   end
 
+  def first(conn, _params) do
+    render(conn, "first.html")
+  end
+
   def basket(conn, _params) do
     slugs = Enum.uniq(get_basket(conn))
     products = Resources.find_products(slugs)

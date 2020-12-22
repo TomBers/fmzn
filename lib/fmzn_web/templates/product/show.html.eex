@@ -25,12 +25,15 @@
                     </ul>
                 </div>
                 <br />
+                <a href="/first" class="btn btn-primary btn-lg btn-block">Buy Now + Fmzn First</a>
+                <a href="/first" class="btn btn-primary btn-lg btn-block">Subscribe to Fmzn First</a>
+                <br><br>
             <form action="/products/addtobasket/<%= @product.slug %>" method="post">
                 <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
-                 <%= submit "Buy Now", class: "btn btn-primary btn-lg" %>
+                    <%= submit "Buy Now", class: "btn btn-secondary btn-block" %>
              </form>
              <br />
-            <button class="btn btn-secondary" onclick="alert('It looks like your current credit score <%= Enum.random([0.9, 1534, 0.001]) %> is not enough.  This check does effect your credit score!')">Buy with InstaCredit <sub>TM</sub></button>
+            <button class="btn btn-secondary btn-block" onclick="alert('It looks like your current credit score <%= Enum.random([0.9, 1534, 0.001]) %> is not enough.  This check does effect your credit score!')">Buy with InstaCredit <sub>TM</sub></button>
             <%= render "share.html" %>
         </div>
       </div>
