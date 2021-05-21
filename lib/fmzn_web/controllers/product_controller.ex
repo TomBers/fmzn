@@ -64,7 +64,7 @@ defmodule FmznWeb.ProductController do
 
   def get_product(conn, _params) do
     product = Resources.get_random_product()
-    json(conn, %{title: product.title, description: product.description, url: "https://fmzn.shop/products/#{product.slug}"})
+    json(conn, %{title: product.title, img: product.img, description: product.description, url: "https://fmzn.shop/products/#{product.slug}"})
   end
 
 end
