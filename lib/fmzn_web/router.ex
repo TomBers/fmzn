@@ -41,5 +41,6 @@ defmodule FmznWeb.Router do
    scope "/api", FmznWeb do
      pipe_through :api
      get "/products", ProductController, :products_json
+     get "/random", ProductController, :get_product
    end
 end
