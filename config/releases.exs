@@ -7,6 +7,4 @@ config :fmzn, FmznWeb.Endpoint,
   secret_key_base: "LkrIIPvPC9XgMqkhgH1RsOn+CyJ+Th/dVRKSxxjE86A+oeEPIal9Gr4DXOffUKjR"
 
 # Configure your database
-config :fmzn, Fmzn.Repo,
-  url: db_url,
-  pool_size: 15
+config :fmzn, Fmzn.Repo, ssl: true, url: db_url, pool_size: 15
